@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using SecondModuleExam_AxmadovBekzod.Entity;
+using SecondModuleExam_AxmadovBekzod.Repositories;
 
 namespace SecondModuleExam_AxmadovBekzod
 {
@@ -10,6 +7,11 @@ namespace SecondModuleExam_AxmadovBekzod
     {
         static void Main(string[] args)
         {
+            var demo = new MovieRepository();
+            Movie movie = new Movie();
+            movie.Title = "Titanik";
+            movie.Director = "Bekzod";
+            demo.WriteMovie(movie);
 
         }
     }
